@@ -1,73 +1,170 @@
-# Welcome to your Lovable project
+# Rental Digital Front
 
-## Project info
+Sistema de aluguel digital - Interface Frontend moderna e responsiva.
 
-**URL**: https://lovable.dev/projects/cc3344c1-cad8-42de-9061-3d8412053833
+## 📋 Descrição
 
-## How can I edit this code?
+O **Rental Digital Front** é uma aplicação web frontend para um sistema de aluguel digital, desenvolvido com tecnologias modernas para proporcionar uma experiência de usuário fluida e intuitiva.
 
-There are several ways of editing your application.
+## 🚀 Tecnologias Utilizadas
 
-**Use Lovable**
+- **[React](https://reactjs.org/)** - Biblioteca JavaScript para construção de interfaces de usuário
+- **[TypeScript](https://www.typescriptlang.org/)** - Superset do JavaScript com tipagem estática
+- **[Vite](https://vitejs.dev/)** - Ferramenta de build rápida e moderna
+- **[Tailwind CSS](https://tailwindcss.com/)** - Framework CSS utilitário para estilização
+- **[shadcn/ui](https://ui.shadcn.com/)** - Componentes de UI reutilizáveis e acessíveis
+- **[Lovable](https://lovable.dev/)** - Plataforma de desenvolvimento integrada
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/cc3344c1-cad8-42de-9061-3d8412053833) and start prompting.
+## 📦 Pré-requisitos
 
-Changes made via Lovable will be committed automatically to this repo.
+Certifique-se de ter instalado em sua máquina:
 
-**Use your preferred IDE**
+- **Node.js** (versão 16 ou superior)
+- **npm** ou **yarn**
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+### Instalação do Node.js com NVM (recomendado)
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```bash
+# Instale o NVM
+curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.39.0/install.sh | bash
 
-Follow these steps:
+# Reinicie o terminal e instale a versão mais recente do Node.js
+nvm install node
+nvm use node
+```
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+## 🛠️ Instalação e Configuração
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+### Método 1: Desenvolvimento Local
 
-# Step 3: Install the necessary dependencies.
-npm i
+```bash
+# 1. Clone o repositório
+git clone https://github.com/feliciocavalcante/rental-digital-front.git
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
+# 2. Navegue até o diretório do projeto
+cd rental-digital-front
+
+# 3. Instale as dependências
+npm install
+
+# 4. Inicie o servidor de desenvolvimento
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+### Método 2: Usando Lovable (Recomendado)
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+1. Acesse o [Projeto no Lovable](https://lovable.dev/projects/cc3344c1-cad8-42de-9061-3d8412053833)
+2. Comece a fazer prompts e editar diretamente
+3. As mudanças serão commitadas automaticamente no repositório
 
-**Use GitHub Codespaces**
+### Método 3: GitHub Codespaces
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+1. Navegue até a página principal do repositório
+2. Clique no botão **"Code"** (botão verde)
+3. Selecione a aba **"Codespaces"**
+4. Clique em **"New codespace"**
+5. Edite os arquivos diretamente no Codespace
 
-## What technologies are used for this project?
+## 📝 Scripts Disponíveis
 
-This project is built with:
+```bash
+# Inicia o servidor de desenvolvimento
+npm run dev
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+# Faz o build para produção
+npm run build
 
-## How can I deploy this project?
+# Executa o preview do build de produção
+npm run preview
 
-Simply open [Lovable](https://lovable.dev/projects/cc3344c1-cad8-42de-9061-3d8412053833) and click on Share -> Publish.
+# Executa os testes
+npm test
 
-## Can I connect a custom domain to my Lovable project?
+# Executa o linter
+npm run lint
+```
 
-Yes, you can!
+## 🏗️ Estrutura do Projeto
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+```
+rental-digital-front/
+├── public/                 # Arquivos públicos
+├── src/                   # Código fonte
+│   ├── components/        # Componentes reutilizáveis
+│   ├── pages/            # Páginas da aplicação
+│   ├── hooks/            # Hooks customizados
+│   ├── lib/              # Utilitários e configurações
+│   ├── types/            # Definições de tipos TypeScript
+│   └── styles/           # Estilos globais
+├── package.json          # Dependências e scripts
+├── tailwind.config.js    # Configuração do Tailwind
+├── tsconfig.json         # Configuração do TypeScript
+└── vite.config.ts        # Configuração do Vite
+```
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+## 🔧 Configuração do Ambiente
+
+Crie um arquivo `.env.local` na raiz do projeto com as seguintes variáveis:
+
+```env
+# API Configuration
+VITE_API_BASE_URL=http://localhost:3000/api
+VITE_APP_NAME=Rental Digital
+
+# Environment
+VITE_NODE_ENV=development
+```
+
+## 🌐 Deploy
+
+### Deploy Automático via Lovable
+
+1. Abra o [Projeto no Lovable](https://lovable.dev/projects/cc3344c1-cad8-42de-9061-3d8412053833)
+2. Clique em **Share** → **Publish**
+
+### Configurar Domínio Personalizado
+
+1. Navegue para **Project** → **Settings** → **Domains**
+2. Clique em **Connect Domain**
+3. Siga as instruções para conectar seu domínio
+
+📖 [Guia de configuração de domínio personalizado](https://docs.lovable.dev/tips-tricks/custom-domain#step-by-step-guide)
+
+## 📱 Funcionalidades
+
+- Interface moderna e responsiva
+- Sistema de autenticação
+- Gerenciamento de aluguéis
+- Dashboard intuitivo
+- Componentes reutilizáveis
+- Tipagem TypeScript completa
+- Otimizada para performance
+
+## 🤝 Contribuindo
+
+1. Faça um fork do projeto
+2. Crie uma branch para sua feature (`git checkout -b feature/nova-funcionalidade`)
+3. Commit suas mudanças (`git commit -m 'Adiciona nova funcionalidade'`)
+4. Push para a branch (`git push origin feature/nova-funcionalidade`)
+5. Abra um Pull Request
+
+## 📄 Licença
+
+Este projeto está sob a licença MIT. Veja o arquivo [LICENSE](LICENSE) para mais detalhes.
+
+## 👨‍💻 Autor
+
+**Felício Cavalcante**
+- GitHub: [@feliciocavalcante](https://github.com/feliciocavalcante)
+
+## 🆘 Suporte
+
+Se você encontrar algum problema ou tiver dúvidas:
+
+1. Verifique as [Issues](https://github.com/feliciocavalcante/rental-digital-front/issues) existentes
+2. Crie uma nova issue se necessário
+3. Consulte a [documentação do Lovable](https://docs.lovable.dev/)
+
+---
+
+⭐ **Se este projeto te ajudou, considere deixar uma estrela!**
