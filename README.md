@@ -51,13 +51,9 @@ npm install
 npm run dev
 ```
 
-### Método 2: Usando Lovable (Recomendado)
 
-1. Acesse o [Projeto no Lovable](https://lovable.dev/projects/cc3344c1-cad8-42de-9061-3d8412053833)
-2. Comece a fazer prompts e editar diretamente
-3. As mudanças serão commitadas automaticamente no repositório
 
-### Método 3: GitHub Codespaces
+### Método 2: GitHub Codespaces
 
 1. Navegue até a página principal do repositório
 2. Clique no botão **"Code"** (botão verde)
@@ -119,8 +115,7 @@ VITE_NODE_ENV=development
 
 ### Deploy Automático via Lovable
 
-1. Abra o [Projeto no Lovable](https://lovable.dev/projects/cc3344c1-cad8-42de-9061-3d8412053833)
-2. Clique em **Share** → **Publish**
+1. Abra o [Projeto - Aluguel de Carros](https://rental-digital-front.vercel.app/)
 
 ### Configurar Domínio Personalizado
 
